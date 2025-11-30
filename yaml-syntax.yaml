@@ -1,0 +1,19 @@
+# key value pairs
+
+name: hasti
+age: 19
+job: devops engineer
+
+# lists
+
+fruits:
+  - apple
+  - banana
+  - cherry
+
+# nested elements
+
+addresses:
+  street: 123 example road
+  city: london
+  country: united kingdom
