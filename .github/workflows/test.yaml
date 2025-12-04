@@ -14,5 +14,7 @@ jobs:
       - name: run bash script
         run: echo "hello"
 
-      - name: run another bash script
-        run: ls -l
+      - name: run multi line script
+        run: |
+          ls -l
+          ls /
