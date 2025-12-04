@@ -15,4 +15,4 @@ jobs:
         run: echo "hello"
 
       - name: run another bash script
-        run: ls -l S
+        run: ls -l
