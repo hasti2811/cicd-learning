@@ -8,6 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout code
+        uses: actions/checkout@v4
+
       - name: run bash script
         run: echo "hello"
+
+      - name: run another bash script
+        run: ls -l S
