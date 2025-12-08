@@ -1,10 +1,10 @@
 name: my test pipeline
 
 on:
-  # push:
-  #   branches:
-  #     - main
   workflow_dispatch:
+
+env:
+  APP_ENV: dev
 
 jobs:
   build:
@@ -29,3 +29,12 @@ jobs:
 
       - name: say bye
         run: echo "bye"
+
+  real-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      
+      - name: use env vars
+        run: echo "this is my first env var: $APP_ENV"
