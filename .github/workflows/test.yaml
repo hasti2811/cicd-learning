@@ -2,6 +2,8 @@ name: my test pipeline
 
 on:
   push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -18,3 +20,6 @@ jobs:
         run: |
           ls -l
           ls /
+
+      - name: use secret
+        run: echo "the  secret is ${{ secrets.MY_SECRET }}"
