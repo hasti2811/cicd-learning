@@ -23,3 +23,6 @@ jobs:
 
       - name: use secret
         run: echo "the  secret is ${{ secrets.MY_SECRET }}"
+
+      - name: say hi
+        run: echo "hi"
