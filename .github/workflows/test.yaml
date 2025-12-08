@@ -35,6 +35,6 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v4
-      
+
       - name: use env vars
-        run: echo "this is my first env var: $APP_ENV"
+        run: echo "this is my first env var:" "$APP_ENV"
